@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomePage.master.cs" Inherits="OnlineFlowerShopForm.HomePage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>FrontPage</title>
+    <link href="StyleForm.css" rel="stylesheet" type="text/css" />
+    <script src="FormScriptFile.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server" style="margin-left:10%">
+        <div class="center">
+            <div>
+                <header class="top"><h1>FLOWER SHOP ONLINE</h1></header>
+            </div>
+            <div class="empty"></div>
+            <div>
+                <asp:ContentPlaceHolder ID="MiddleContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div>
+                <h2 class="bottom">&nbsp;&nbsp;Thank you for shopping at Flowershop. Have a nice day
+                </h2>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
