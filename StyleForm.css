@@ -42,6 +42,7 @@
     width: 65%;
 }
 .logo-image {
+    border:1px solid black;
     right: 0px;
     height: 50px;
     width: 50px;

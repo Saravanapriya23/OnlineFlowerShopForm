@@ -70,7 +70,7 @@
                     <tr>
                         <td>*Expiry date</td>
                         <td>
-                            <asp:DropDownList runat="server" ItemType="Number" Width="10%" required=" ">
+                            <asp:DropDownList runat="server" ItemType="Month" Width="10%" required=" ">
                                 <asp:ListItem Value="1" Selected="False" />
                                 <asp:ListItem Value="2" />
                                 <asp:ListItem Value="3" />
@@ -84,7 +84,7 @@
                                 <asp:ListItem Value="11" />
                                 <asp:ListItem Value="12" />
                             </asp:DropDownList>
-                            <asp:DropDownList runat="server" ItemType="Number" Width="10%" required=" ">
+                            <asp:DropDownList runat="server" ItemType="Year" Width="10%" required=" ">
                                 <asp:ListItem Value="2021" Selected="False" />
                                 <asp:ListItem Value="2022" />
                                 <asp:ListItem Value="2023" />
@@ -150,12 +150,12 @@
                     <tr>
                         <td>&nbsp;&nbsp;Telephone</td>
                         <td>
-                            <asp:TextBox runat="server" ID="txtTelephone" onchange="validatePhoneNo()" Width="40%" required=" "/></td>
+                            <asp:TextBox runat="server" ID="txtTelephone" onchange="validatePhoneNo()" Width="40%" /></td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;Fax</td>
                         <td>
-                            <asp:TextBox runat="server" ID="txtFax" onchange="validateFax()" Width="40%" required=" " /></td>
+                            <asp:TextBox runat="server" ID="txtFax" onchange="validateFax()" Width="40%"/></td>
                     </tr>
                     <tr>
                         <td>*Email address</td>
