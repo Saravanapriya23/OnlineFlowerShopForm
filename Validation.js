@@ -5,10 +5,6 @@
         x.focus();
         alert("Card number is invalid!");
     }
-    //else if (x.value == null) {
-    //    x.focus();
-    //    alert("Card number is required");
-    //}
 }
 
 function validateSecurityCode() {

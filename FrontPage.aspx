@@ -1,7 +1,21 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/HomePage.Master" AutoEventWireup="true" CodeBehind="FrontPage.aspx.cs" Inherits="OnlineFlowerShopForm.FrontPage" %>
-<asp:Content ID="head" ContentPlaceHolderID="head" runat="server"><script src="FormScriptFile.js"></script></asp:Content>
-<asp:Content ID="Content" ContentPlaceHolderID="MiddleContent" runat="server">
-    <div class="row">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FrontPage.aspx.cs" Inherits="OnlineFlowerShopForm.FrontPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server"><title>FrontPage</title>
+    <link href="StyleForm.css" rel="stylesheet" type="text/css" />
+    <script src="Validation.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="center">
+            <div>
+                <header class="top"><h1>FLOWER SHOP ONLINE</h1></header>
+            </div>
+            <div class="empty"></div>
+            <div>
+                <div class="row">
         <div class="column">
             <asp:Image ImageUrl="~/Images/img.png" runat="server" CssClass="flower-image" />
         </div>
@@ -155,19 +169,20 @@
                 <table style="width: 100%">
                     <tr>
                         <td>
-                            <asp:ImageButton ImageUrl="~/Images/startAgain.png" runat="server" Width="25px" Height="25px" OnClick="StartAgainClick" />
+                            <asp:ImageButton ImageUrl="~/Images/startAgain.png" runat="server" Width="25px" Height="25px" OnClick="StartAgainClick"
+/>
                             <input type="button" name="startAgain" value="START AGAIN" class="button" />
                         </td>
                         <td style="text-align: right">
                             <input type="submit" name="makePayment" value="MAKE PAYMENT" class="button" />
-                            <asp:ImageButton ImageUrl="~/Images/Payment.png" runat="server" Width="25px" Height="25px"  OnClick="PaymentClick"/>
+                            <asp:ImageButton ImageUrl="~/Images/Payment.png" runat="server" Width="25px" Height="25px" OnClick="PaymentClick" />
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <asp:ImageButton ImageUrl="~/Images/cancel.png" runat="server" Width="25px" Height="25px" OnClick="CancelClick" />
                             <input type="reset" name="cancel" value="CANCEL" class="button" />
-                            <asp:HyperLink NavigateUrl="https://www.termsfeed.com/blog/sample-return-policy-ecommerce-stores/" runat="server" Value="CANCEL" />
+                            <!--<asp:HyperLink NavigateUrl="https://www.termsfeed.com/blog/sample-return-policy-ecommerce-stores/" runat="server" Value="CANCEL" />-->
                         </td>
                     </tr>
                 </table>
@@ -186,4 +201,12 @@
             </div>
         </div>
     </div>
-</asp:Content>
+            </div>
+            <div>
+                <h2 class="bottom">&nbsp;&nbsp;Thank you for shopping at Flowershop. Have a nice day
+                </h2>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

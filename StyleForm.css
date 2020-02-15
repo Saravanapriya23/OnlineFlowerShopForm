@@ -1,4 +1,8 @@
-﻿.center {
+﻿body{
+    border-width: 900px;
+    margin-left: 22%;
+}
+.center {
     position: absolute;
     width: 75%;
     border: solid;
